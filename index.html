@@ -22,6 +22,7 @@
     <div id="chain" class="fa"></div>
   </body>
   <script>
+    // break chain animation
     function breakChain() {
       let chain = document.getElementById("chain");
 
@@ -31,8 +32,10 @@
         chain.innerHTML = "&#xf127;";
       }, 1000);
     }
-
+    // call animation
     breakChain();
+
+    // animate every 2 seconds
     setInterval(breakChain, 2000);
   </script>
 </html>
