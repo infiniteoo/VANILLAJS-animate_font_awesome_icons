@@ -16,10 +16,18 @@
       #chain {
         font-size: 50px;
       }
+
+      #battery {
+        font-size: 50px;
+      }
     </style>
   </head>
   <body>
     <div id="chain" class="fa"></div>
+
+    <br /><br />
+
+    <div id="battery" class="fa"></div>
   </body>
   <script>
     // break chain animation
@@ -37,5 +45,14 @@
 
     // animate every 2 seconds
     setInterval(breakChain, 2000);
+
+    // battery charge animation
+    function chargeBattery() {
+      let battery = document.getElementById("battery");
+
+      battery.innerHTML = "&#xf244;";
+    }
+
+    chargeBattery();
   </script>
 </html>
