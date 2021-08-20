@@ -20,6 +20,9 @@
       #battery {
         font-size: 50px;
       }
+      #hourglass {
+        font-size: 50px;
+      }
     </style>
   </head>
   <body>
@@ -28,6 +31,9 @@
     <br /><br />
 
     <div id="battery" class="fa"></div>
+    <br /><br />
+
+    <div id="hourglass" class="fa"></div>
   </body>
   <script>
     // break chain animation
@@ -71,5 +77,14 @@
     // run animation every 5 seconds
 
     setInterval(chargeBattery, 5000);
+
+    // houeglass animation
+    function hourglassTip() {
+      let hourglass = document.getElementById("hourglass");
+
+      hourglass.innerHTML = "&#xf251";
+    }
+
+    hourglassTip();
   </script>
 </html>
