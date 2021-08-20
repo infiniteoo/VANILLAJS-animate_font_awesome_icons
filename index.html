@@ -12,6 +12,22 @@
       referrerpolicy="no-referrer"
     />
     <title>Animated Font Awesome Icons</title>
+    <style>
+      #chain {
+        font-size: 50px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="chain" class="fa"></div>
+  </body>
+  <script>
+    function breakChain() {
+      let chain = document.getElementById("chain");
+
+      chain.innerHTML = "&#xf0c1;";
+    }
+
+    breakChain();
+  </script>
 </html>
